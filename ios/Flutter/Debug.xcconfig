@@ -1,0 +1,4 @@
+#include "Generated.xcconfig"
+
+APP_DISPLAY_NAME=Gym App (Dev)
+APP_ID_SUFFIX=.dev

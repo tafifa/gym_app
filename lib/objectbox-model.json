@@ -1,0 +1,133 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:6879480637049847989",
+      "lastPropertyId": "7:1464783182992380359",
+      "name": "ExerciseEntity",
+      "properties": [
+        {
+          "id": "1:231256136036700834",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:6750499716414085536",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:5566363948405836744",
+          "name": "category",
+          "type": 9
+        },
+        {
+          "id": "4:1556160682526217980",
+          "name": "sets",
+          "type": 6
+        },
+        {
+          "id": "5:3859088017587302107",
+          "name": "reps",
+          "type": 6
+        },
+        {
+          "id": "6:7169566214768779338",
+          "name": "defaultWeight",
+          "type": 8
+        },
+        {
+          "id": "7:1464783182992380359",
+          "name": "programId",
+          "indexId": "1:3434331380561699962",
+          "type": 11,
+          "flags": 520,
+          "relationTarget": "WorkoutProgramEntity"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:8992228114827215693",
+      "lastPropertyId": "5:5343697026691882084",
+      "name": "WorkoutProgramEntity",
+      "properties": [
+        {
+          "id": "1:1788873643091369422",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:6531597401178793531",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:2344989997266328974",
+          "name": "description",
+          "type": 9
+        },
+        {
+          "id": "4:7339114637262735169",
+          "name": "level",
+          "type": 9
+        },
+        {
+          "id": "5:5343697026691882084",
+          "name": "durationMinutes",
+          "type": 6
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:1202436229571076132",
+      "lastPropertyId": "5:8496532033844004934",
+      "name": "WorkoutSessionEntity",
+      "properties": [
+        {
+          "id": "1:5859174407862279108",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:3127719081036296037",
+          "name": "programName",
+          "type": 9
+        },
+        {
+          "id": "3:5928465971021259044",
+          "name": "dateTimestamp",
+          "type": 6
+        },
+        {
+          "id": "4:1482796845441125706",
+          "name": "durationMinutes",
+          "type": 6
+        },
+        {
+          "id": "5:8496532033844004934",
+          "name": "exercisesJson",
+          "type": 9
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "3:1202436229571076132",
+  "lastIndexId": "1:3434331380561699962",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}
